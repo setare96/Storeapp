@@ -19,6 +19,7 @@ public class Album {
         this.sell_number = sell_number;
         this.upload_date = upload_date;
     }
+    //555
 
     public String getName() {
         return name;
