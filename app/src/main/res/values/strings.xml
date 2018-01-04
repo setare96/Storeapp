@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Store</string>
+    <string name="home">خانه</string>
+    <string name="open_drawer">open</string>
+    <string name="close_drawer">close</string>
+    <string name="title">a</string>
+    <string name="hello_world">AA</string>
+
+    <string-array name="Planets">
+        <item>Sun</item>
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+
+    <string name="tab1">کالای دیجیتال</string>
+    <string name="tab2">پوشاک</string>
+    <string name="tab3">لوازم ورزشی و سرگرمی</string>
+    <string name="tab4">لوازم زیبایی</string>
+    <string name="tab5">لوازم خانگی</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_add_favourite">Add to Favourites</string>
+    <string name="action_play_next">Play Next</string>
+    <string name="backdrop_title">LOVE MUSIC</string>
+    <string name="backdrop_subtitle">This season top 20 albums</string>
+
+    <string-array name="navigation_drawer_items_array">
+        <item>Connect</item>
+        <item>Fixtures</item>
+        <item>Table</item>
+    </string-array>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="spinner_title">Select Category</string>
+
+    <string name="path_search">M141,17 A9,9 0 1,1 142,16 L149,23</string>
+
+</resources>

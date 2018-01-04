@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp">
+
+                        <com.mindorks.placeholderview.PlaceHolderView
+                            android:id="@+id/galleryView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="250dp"
+                            android:layout_marginTop="55dp"
+                            android:scrollbars="vertical"
+                            android:layout_centerHorizontal="true"/>
+
+                        <com.daimajia.slider.library.SliderLayout
+                            android:id="@+id/slider"
+                            android:layout_width="wrap_content"
+                            android:layout_height="250dp"
+                            android:layout_marginTop="55dp"
+                            android:layout_centerHorizontal="true"/>
+
+                        <TextView
+                            android:id="@+id/TV_recycler_view1"
+
+                            android:gravity="right"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/slider"
+                            android:paddingRight="10dp"
+                            android:layout_marginTop="15dp"
+
+                            android:text="لپ تاپ ها"
+                            android:textSize="22dp"
+                            android:textColor="@color/colorPrimary"/>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recycler_view1"
+
+                            android:layout_below="@+id/TV_recycler_view1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clipToPadding="false"
+                            android:scrollbars="horizontal"
+                            app:reverseLayout="true"
+                            app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+
+                        <ImageView
+                            android:id="@+id/Home_Image_1"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/recycler_view1"
+                            />
+
+                        <ImageView
+                            android:id="@+id/Home_Image_2"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/Home_Image_1"
+
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            />
+
+                        <LinearLayout
+                            android:id="@+id/home_LL1"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/Home_Image_2"
+
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:weightSum="2">
+
+                                <ImageView
+                                    android:id="@+id/Home_Image_3"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="150dp"
+                                    android:layout_weight="1"
+
+                                    android:layout_marginLeft="5dp"
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/Home_Image_4"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="150dp"
+                                    android:layout_weight="1"
+
+                                    android:layout_marginRight="5dp"
+                                    />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/Home_Image_5"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/home_LL1"
+
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            />
+
+                        <LinearLayout
+                            android:id="@+id/home_LL2"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/Home_Image_5"
+
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:weightSum="2">
+
+                                <ImageView
+                                    android:id="@+id/Home_Image_6"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="150dp"
+                                    android:layout_weight="1"
+
+                                    android:layout_marginLeft="5dp"
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/Home_Image_7"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="150dp"
+                                    android:layout_weight="1"
+
+                                    android:layout_marginRight="5dp"
+                                    />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/TV_recycler_view2"
+
+                            android:gravity="right"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/home_LL2"
+                            android:paddingRight="10dp"
+                            android:layout_marginTop="15dp"
+
+                            android:text="موبایل"
+                            android:textSize="22dp"
+                            android:textColor="@color/colorPrimary"/>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recycler_view2"
+
+                            android:layout_below="@+id/TV_recycler_view2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clipToPadding="false"
+                            android:scrollbars="horizontal"
+                            app:reverseLayout="true"
+                            app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+
+                        <ImageView
+                            android:id="@+id/Home_Image_8"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/recycler_view2"
+                            />
+
+                        <TextView
+                            android:id="@+id/TV_recycler_view3"
+
+                            android:gravity="right"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/Home_Image_8"
+                            android:paddingRight="10dp"
+                            android:layout_marginTop="15dp"
+
+                            android:text="تبلت"
+                            android:textSize="22dp"
+                            android:textColor="@color/colorPrimary"/>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recycler_view3"
+
+                            android:layout_below="@+id/TV_recycler_view3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clipToPadding="false"
+                            android:scrollbars="horizontal"
+                            app:reverseLayout="true"
+                            app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+
+                        <TextView
+                            android:id="@+id/TV_recycler_view4"
+
+                            android:gravity="right"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/recycler_view3"
+                            android:paddingRight="10dp"
+                            android:layout_marginTop="15dp"
+
+                            android:text="TV_recycler_view4"
+                            android:textSize="22dp"
+                            android:textColor="@color/colorPrimary"/>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recycler_view4"
+
+                            android:layout_below="@+id/TV_recycler_view4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clipToPadding="false"
+                            android:scrollbars="horizontal"
+                            app:reverseLayout="true"
+                            app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+
+                        <TextView
+                            android:id="@+id/TV_recycler_view5"
+
+                            android:gravity="right"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/recycler_view4"
+                            android:paddingRight="10dp"
+                            android:layout_marginTop="15dp"
+
+                            android:text="TV_recycler_view5"
+                            android:textSize="22dp"
+                            android:textColor="@color/colorPrimary"/>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recycler_view5"
+
+                            android:layout_below="@+id/TV_recycler_view5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clipToPadding="false"
+                            android:scrollbars="horizontal"
+                            app:reverseLayout="true"
+                            app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+
+                        <TextView
+                            android:id="@+id/TV_recycler_view6"
+
+                            android:gravity="right"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/recycler_view5"
+                            android:paddingRight="10dp"
+                            android:layout_marginTop="15dp"
+
+                            android:text="TV_recycler_view6"
+                            android:textSize="22dp"
+                            android:textColor="@color/colorPrimary"/>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recycler_view6"
+
+                            android:layout_below="@+id/TV_recycler_view6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clipToPadding="false"
+                            android:scrollbars="horizontal"
+                            app:reverseLayout="true"
+                            app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+
+                        <TextView
+                            android:id="@+id/TV_recycler_view7"
+
+                            android:gravity="right"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/recycler_view6"
+                            android:paddingRight="10dp"
+                            android:layout_marginTop="15dp"
+
+                            android:text="TV_recycler_view7"
+                            android:textSize="22dp"
+                            android:textColor="@color/colorPrimary"/>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recycler_view7"
+
+                            android:layout_below="@+id/TV_recycler_view7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clipToPadding="false"
+                            android:scrollbars="horizontal"
+                            app:reverseLayout="true"
+                            app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+
+                </RelativeLayout>
+
+        </ScrollView>
+
+</LinearLayout>

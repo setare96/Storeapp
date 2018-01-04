@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    android:layoutDirection="rtl">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            tools:context="com.learn2crack.myapplication.MainActivity">
+
+                <android.support.design.widget.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/AppTheme">
+
+                        <android.support.v7.widget.Toolbar
+                            android:id="@+id/toolbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize"
+                            android:background="?attr/colorPrimary"
+                            app:popupTheme="@style/AppTheme">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:weightSum="8"
+                                    android:gravity="center">
+
+                                        <TextView
+                                            android:id="@+id/TV_toolbar_home"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="4"
+
+                                            android:gravity="right|center"
+
+                                            android:layout_alignParentLeft="true"
+
+                                            android:textSize="18sp"
+                                            android:text="@string/home"
+                                            android:textColor="@color/Text"/>
+
+                                        <FrameLayout
+                                            xmlns:android="http://schemas.android.com/apk/res/android"
+                                            xmlns:tools="http://schemas.android.com/tools"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:background="@color/colorPrimary"
+                                            tools:context=".Basic_Activity.Main_Activity.HomeActivity"
+                                            android:onClick="animate">
+
+                                                <EditText
+                                                    android:id="@+id/text"
+
+                                                    android:layout_width="150dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:paddingStart="4dp"
+
+                                                    android:background="@null"
+                                                    android:alpha="0"
+
+                                                    android:imeOptions="actionSearch"
+                                                    android:inputType="text"
+
+                                                    android:textSize="15sp"
+                                                    android:textColor="@color/colorAccent" />
+
+                                                <ImageView
+                                                    android:id="@+id/search"
+
+                                                    android:layout_gravity="center"
+                                                    android:layout_width="150dp"
+                                                    android:layout_height="match_parent"
+
+                                                    android:src="@drawable/search_bar"
+                                                    android:onClick="animate" />
+
+                                        </FrameLayout>
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="3"
+                                            android:gravity="left|center">
+
+                                                <TextView
+                                                    android:id="@+id/TV_buy_box_counter_toolbar"
+                                                    android:layout_width="30dp"
+                                                    android:layout_height="30dp"
+
+                                                    android:gravity="center"
+                                                    android:layout_marginLeft="10dp"
+                                                    android:paddingBottom="8dp"
+                                                    android:background="@drawable/ic_local_grocery_store_black_18dp"
+
+                                                    android:textColor="@color/colorPrimary"
+                                                    android:textSize="10dp"
+                                                    android:textStyle="bold"/>
+
+                                        </RelativeLayout>
+
+                                </LinearLayout>
+
+                        </android.support.v7.widget.Toolbar>
+
+                </android.support.design.widget.AppBarLayout>
+
+                <!--vasat-->
+
+                <include layout="@layout/content_home" />
+
+                <!--vasat-->
+
+        </android.support.design.widget.CoordinatorLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/navigation_view"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/nav_header"
+            app:menu="@menu/menu_navigation" />
+
+</android.support.v4.widget.DrawerLayout>

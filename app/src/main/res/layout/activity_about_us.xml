@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/album_buy"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="11"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/TV_toolbar_home2"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="5"
+
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:paddingBottom="8dp"
+                        android:background="@drawable/ic_local_grocery_store_black_18dp"
+
+                        android:layout_alignRight="@+id/TV_toolbar_home"
+
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="10dp"
+                        android:textStyle="bold"/>
+
+                    <FrameLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:tools="http://schemas.android.com/tools"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@color/colorPrimary"
+                        tools:context=".Basic_Activity.AboutUs"
+                        android:onClick="animate">
+
+                        <ImageView
+                            android:id="@+id/search"
+                            android:layout_gravity="center"
+                            android:layout_width="150dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/search_bar"
+                            android:onClick="animate" />
+
+                        <EditText
+                            android:id="@+id/text"
+                            android:layout_width="150dp"
+                            android:layout_height="22dp"
+                            android:layout_gravity="center"
+                            android:background="@null"
+                            android:textSize="12sp"
+                            android:paddingStart="4dp"
+                            android:textColor="@color/Text"
+                            android:alpha="0" />
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/TV_toolbar_home"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+
+                        android:gravity="center"
+
+                        android:layout_alignParentLeft="true"
+
+                        android:textSize="18sp"
+                        android:text="@string/home"
+                        android:textColor="@color/Text"/>
+
+                </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="@color/Background">
+
+    <LinearLayout
+        android:id="@+id/LL1_login"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text=": نام کاربری"
+            android:textSize="25dp"
+            android:textColor="@color/colorPrimary"/>
+
+        <EditText
+            android:id="@+id/ED_username_login"
+
+            android:minWidth="75dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="15dp"
+
+            android:gravity="center_vertical"
+
+            android:textSize="20dp"
+            android:textColor="#212F3C"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LL2_login"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="15dp"
+
+        android:layout_below="@+id/LL1_login"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text=": رمز عبور"
+            android:textSize="25dp"
+            android:textColor="@color/colorPrimary"/>
+
+        <EditText
+            android:id="@+id/ED_password_login"
+
+            android:minWidth="75dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="15dp"
+
+            android:gravity="center_vertical"
+
+            android:inputType="textPassword"
+            android:textSize="20dp"
+            android:textColor="#212F3C"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/BTN_login"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="40dp"
+
+        android:layout_below="@+id/LL2_login"
+        android:layout_centerHorizontal="true"
+
+        android:background="@color/icons"
+
+        android:text="ورود"
+        android:textColor="@color/background"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:id="@+id/BTN_logup"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="15dp"
+
+        android:layout_below="@+id/BTN_login"
+        android:layout_centerHorizontal="true"
+
+        android:gravity="center"
+
+        android:text="هنوز ثبت نام نکردم"
+        android:textSize="20dp"
+        android:textColor="#7B241C"/>
+
+</RelativeLayout>

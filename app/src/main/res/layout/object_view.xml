@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+    android:background="#F2F3F4">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/RD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E5E7E9">
+
+                <com.mindorks.placeholderview.PlaceHolderView
+                    android:id="@+id/galleryView_object_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="380dp"
+                    android:scrollbars="vertical"
+                    android:layout_centerHorizontal="true"/>
+
+                <com.daimajia.slider.library.SliderLayout
+                    android:id="@+id/slider_object_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="380dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="fill_vertical"
+                    />
+
+                <ImageButton
+                    android:id="@+id/BTN_favorite_object_view"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+
+                    android:layout_below="@+id/galleryView_object_view"
+
+                    android:background="@drawable/ic_favorite_black_24dp"/>
+
+                <TextView
+                    android:id="@+id/TV_name_object_view"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="15dp"
+
+                    android:gravity="right"
+
+                    android:layout_below="@+id/BTN_favorite_object_view"
+
+                    android:text="اسم"
+                    android:textSize="25dp"
+                    android:textColor="@color/colorPrimary" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/LL1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:layout_centerHorizontal="true"
+
+                android:layout_below="@+id/RD">
+
+                <Button
+                    android:id="@+id/BTN_command_object_view"
+
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:background="#E5E7E9"
+
+                    android:text="نظرات کاربران"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:id="@+id/BTN_dital_object_view"
+
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="50dp"
+
+                    android:layout_toRightOf="@id/BTN_command_object_view"
+                    android:background="#E5E7E9"
+
+                    android:text="مشخصات"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/RL_dt"
+                android:layout_width="350dp"
+                android:layout_height="190dp"
+                android:layout_marginTop="10dp"
+
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/LL1"
+
+                android:background="#E5E7E9">
+
+                <TextView
+                    android:id="@+id/TV_price_object_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingLeft="15dp"
+
+                    android:gravity="center|left"
+
+                    android:text="قیمت"
+                    android:textSize="20dp"
+                    android:textColor="#00AB49"
+                    android:textStyle="bold"/>
+
+                <RelativeLayout
+                    android:id="@+id/RL_warranty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+
+                    android:layout_below="@id/TV_price_object_view"
+
+                    android:gravity="right">
+
+                    <TextView
+                        android:id="@+id/TV_warranty_topic_object_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignParentRight="true"
+
+                        android:text="گارانتی:"
+                        android:textSize="18dp"
+                        android:textColor="#85929E"
+                        />
+
+                    <TextView
+                        android:id="@+id/TV_warranty_object_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="25dp"
+
+                        android:layout_centerVertical="true"
+
+                        android:layout_toLeftOf="@+id/TV_warranty_topic_object_view"
+
+                        android:text="نوع گارانتی"
+                        android:textSize="15dp"
+                        android:textColor="@color/colorPrimary"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RL_seller"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+
+                    android:layout_below="@id/RL_warranty"
+
+                    android:gravity="right">
+
+                    <TextView
+                        android:id="@+id/TV_seller_topic_object_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignParentRight="true"
+
+                        android:text="فروشنده:"
+                        android:textSize="18dp"
+                        android:textColor="#85929E"
+                        />
+
+                    <TextView
+                        android:id="@+id/TV_seller_object_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="25dp"
+
+                        android:layout_centerVertical="true"
+
+                        android:layout_toLeftOf="@+id/TV_seller_topic_object_view"
+
+                        android:text="فروشنده کالا"
+                        android:textSize="15dp"
+                        android:textColor="@color/colorPrimary"
+                        />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/BTN_add_to_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+
+                    android:layout_below="@+id/RL_seller"
+
+                    android:background="#00AB49"
+
+                    android:text="افزودن به سبد خرید"
+                    android:textSize="20dp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RL_description"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="20dp"
+
+                android:layout_centerHorizontal="true"
+
+                android:layout_below="@+id/RL_dt"
+                android:gravity="right"
+                android:background="#E5E7E9">
+
+                <TextView
+                    android:id="@+id/TV_description_object_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentTop="true"
+
+                    android:layout_centerHorizontal="true"
+                    android:gravity="right"
+
+                    android:maxLines="4"
+                    android:text="توضیحات"
+                    android:textColor="#85929E"
+                    android:textSize="18dp" />
+
+                <View
+                    android:id="@+id/LINE_object_view"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+
+                    android:layout_below="@+id/TV_description_object_view"
+                    android:background="@android:color/darker_gray"/>
+
+                <TextView
+                    android:id="@+id/BTN_description_object_view"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+
+                    android:layout_centerHorizontal="true"
+
+                    android:layout_below="@+id/LINE_object_view"
+                    android:background="#E5E7E9"
+
+                    android:text="ادامه مطلب"
+                    android:textSize="18dp"
+                    android:textColor="#85929E"
+                    />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

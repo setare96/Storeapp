@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="@color/Background">
+
+        <LinearLayout
+            android:id="@+id/LL1_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text=": نام کاربری"
+                    android:textSize="25dp"
+                    android:textColor="@color/colorPrimary"/>
+
+                <TextView
+                    android:id="@+id/TV_username_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:paddingLeft="15dp"
+
+                    android:gravity="center_vertical"
+
+                    android:textSize="20dp"
+                    android:textColor="#212F3C"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LL2_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="15dp"
+
+            android:layout_below="@+id/LL1_account"
+            android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text=": ایمیل"
+                    android:textSize="25dp"
+                    android:textColor="@color/colorPrimary"/>
+
+                <TextView
+                    android:id="@+id/TV_email_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:paddingLeft="15dp"
+
+                    android:gravity="center_vertical"
+
+                    android:textSize="20dp"
+                    android:textColor="#212F3C"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/BTN_logout"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+
+            android:layout_marginTop="40dp"
+
+            android:layout_below="@+id/LL2_account"
+            android:layout_centerHorizontal="true"
+
+            android:background="@color/icons"
+
+            android:text="خروج"
+            android:textColor="@color/background"
+            android:textSize="25dp"/>
+
+</RelativeLayout>

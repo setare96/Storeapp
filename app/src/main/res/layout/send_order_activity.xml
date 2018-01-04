@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbatlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_album"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:layoutDirection="rtl">
+
+            <TextView
+                android:id="@+id/TV_SUB_album"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+
+                android:gravity="right|center"
+                android:layout_gravity="center"
+
+                android:textColor="@color/Text"
+                android:textSize="18sp"
+                android:text="ارسال سفارش"/>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/appbatlayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:paddingBottom="60dp">
+
+            <LinearLayout
+                android:id="@+id/LL_total_address"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="10dp">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/card_margin"
+                    android:elevation="3dp"
+                    card_view:cardCornerRadius="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:layout_margin="8dp">
+
+                        <TextView
+                            android:id="@+id/TV_topic"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="30dp"
+
+                            android:gravity="center_vertical"
+
+                            android:paddingRight="10dp"
+
+                            android:text="آدرس تحویل سفارش :"
+                            android:textSize="20dp"
+                            android:textStyle="bold"/>
+
+                        <LinearLayout
+                            android:id="@+id/LL2_address"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:weightSum="4"
+
+                            android:layout_below="@+id/TV_topic"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/TV_receiver_city"
+
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+
+                                android:gravity="right|center"
+
+                                android:layout_margin="5dp"
+                                android:paddingRight="10dp"
+
+                                android:text="****"
+                                android:textSize="15dp"/>
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+
+                                android:gravity="right|center"
+
+                                android:layout_margin="5dp"
+                                android:paddingRight="10dp"
+
+                                android:text="شهر :"
+                                android:textSize="15dp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/TV_receiver_state"
+
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+
+                                android:gravity="right|center"
+
+                                android:layout_margin="5dp"
+                                android:paddingRight="10dp"
+
+                                android:text="****"
+                                android:textSize="15dp"/>
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+
+                                android:gravity="right|center"
+
+                                android:layout_margin="5dp"
+                                android:paddingRight="10dp"
+
+                                android:text="استان :"
+                                android:textSize="15dp"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LL5_address"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="3"
+
+                            android:layout_below="@+id/LL2_address"
+
+                            android:minHeight="40dp"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/TV_receiver_post_address"
+
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:layout_below="@+id/LL4_address"
+
+                                android:gravity="right"
+
+                                android:layout_margin="5dp"
+                                android:paddingRight="10dp"
+
+                                android:text="**********************"
+                                android:textSize="15dp"/>
+
+                            <TextView
+                                android:layout_weight="2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:layout_below="@+id/LL4_address"
+
+                                android:gravity="right"
+
+                                android:layout_margin="5dp"
+                                android:paddingRight="10dp"
+
+                                android:text="نشانی پستی :"
+                                android:textSize="15dp"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LL4_address"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="3"
+
+                            android:layout_below="@+id/LL5_address"
+
+                            android:minHeight="40dp"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/TV_receiver_post_number"
+
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:gravity="right"
+
+                                android:paddingRight="10dp"
+
+                                android:text="********"
+                                android:textSize="15dp"/>
+
+                            <TextView
+                                android:layout_weight="2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:gravity="right"
+
+                                android:layout_margin="5dp"
+                                android:paddingRight="10dp"
+
+                                android:text="کد پستی :"
+                                android:textSize="15dp"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LL1_address"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+
+                            android:layout_below="@+id/LL4_address"
+
+                            android:minHeight="40dp"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/TV_receiver_phone_number"
+
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:gravity="right"
+
+                                android:paddingRight="10dp"
+
+                                android:text="09** *******"
+                                android:textSize="18dp"/>
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:gravity="right|center"
+
+                                android:layout_margin="5dp"
+                                android:paddingRight="10dp"
+
+                                android:backgroundTint="@color/green"
+
+                                android:inputType="phone"
+                                android:text="شماره تلفن همراه"
+                                android:textSize="15dp"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LL6_address"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+
+                            android:layout_below="@+id/LL1_address"
+
+                            android:minHeight="40dp"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/TV_receiver_home_number"
+
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:gravity="right"
+
+                                android:paddingRight="10dp"
+
+                                android:text="021 ********"
+                                android:textSize="18dp"/>
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:gravity="right|center"
+
+                                android:layout_margin="5dp"
+                                android:paddingRight="10dp"
+
+                                android:backgroundTint="@color/green"
+
+                                android:inputType="phone"
+                                android:text="شماره تلفن ثابت"
+                                android:textSize="15dp"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/TV_change_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+
+                            android:layout_below="@+id/LL6_address"
+
+                            android:gravity="left|center"
+                            android:paddingLeft="10dp"
+
+                            android:text="تغییر آدرس"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/green"/>
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LL_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:layout_below="@+id/LL_total_address">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view_post"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/card_margin"
+                    android:elevation="3dp"
+                    card_view:cardCornerRadius="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/TV_post"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center_vertical"
+
+                            android:paddingRight="10dp"
+
+                            android:text="شیوه ارسال سفارش :"
+                            android:textSize="20dp"
+                            android:textStyle="bold"/>
+
+                        <View
+                            android:id="@+id/v_post"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="2dp"
+
+                            android:layout_below="@+id/TV_post"
+
+                            android:background="@android:color/darker_gray"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="50dp"
+
+                            android:weightSum="3"
+
+                            android:gravity="center"
+
+                            android:layout_below="@+id/v_post">
+
+                            <RadioButton
+                                android:id="@+id/Radio_BTN_post"
+
+                                android:layout_weight="2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                android:layout_marginLeft="10dp"
+
+                                android:gravity="left|center"
+
+                                android:checked="true"
+                                android:buttonTint="@color/green"
+
+                                android:text="رایگان "
+                                android:textColor="@color/green"/>
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:paddingRight="10dp"
+
+                                android:text="پست پیشتاز"
+                                android:textSize="15dp"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:layout_below="@+id/LL_post">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view_factor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/card_margin"
+                    android:elevation="3dp"
+                    card_view:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="50dp"
+
+                        android:weightSum="5"
+
+                        android:gravity="center">
+
+                        <RadioGroup
+                            android:id="@+id/radioGroup"
+
+                            android:layout_weight="3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+
+                            android:weightSum="2">
+
+                            <RadioButton
+                                android:id="@+id/Radio_BTN_factor_yes"
+
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                android:layout_marginLeft="10dp"
+
+                                android:gravity="left|center"
+
+                                android:checked="true"
+                                android:buttonTint="@color/green"
+
+                                android:text="بله "
+                                android:textColor="@color/green"/>
+
+                            <RadioButton
+                                android:id="@+id/Radio_BTN_factor_no"
+
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                android:layout_marginLeft="10dp"
+
+                                android:gravity="left|center"
+
+                                android:checked="false"
+                                android:buttonTint="@color/red"
+
+                                android:text="خیر "
+                                android:textColor="@color/red"/>
+
+                        </RadioGroup>
+
+                        <TextView
+                            android:layout_weight="2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:paddingRight="10dp"
+
+                            android:text="آیا مایل به دریافت فاکتور هستید؟"
+                            android:textSize="15dp"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/BTN_send_order"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="15dp"
+
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+
+        android:background="@color/green"
+
+        android:text="ثبت اطلاعات و ادامه خرید >"
+        android:textSize="18dp"
+        android:textColor="@color/background"/>
+
+</RelativeLayout>

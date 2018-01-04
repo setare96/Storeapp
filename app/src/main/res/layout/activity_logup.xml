@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_centerVertical="true">
+
+        <LinearLayout
+            android:id="@+id/LL1_logup"
+
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+
+            <TextView
+                android:id="@+id/TV_username"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+
+                android:gravity="center"
+
+                android:text="نام کاربری"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="italic"/>
+
+            <EditText
+                android:id="@+id/ED_username"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:paddingLeft="25dp"
+
+                android:gravity="left"
+
+                android:hint="اسم"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="italic"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LL2_logup"
+
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+
+            android:layout_marginTop="10dp"
+
+            android:layout_below="@+id/LL1_logup">
+
+            <TextView
+                android:id="@+id/TV_password"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+
+                android:gravity="center"
+
+                android:text="رمز عبور"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="italic"/>
+
+            <EditText
+                android:id="@+id/ED_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:paddingLeft="25dp"
+
+                android:gravity="left"
+
+                android:inputType="textPassword"
+
+                android:hint="رمز"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LL3_logup"
+
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+
+            android:layout_marginTop="10dp"
+
+            android:layout_below="@+id/LL2_logup">
+
+            <TextView
+                android:id="@+id/TV_email"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+
+                android:gravity="center"
+
+                android:text="ایمیل"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="italic"/>
+
+            <EditText
+                android:id="@+id/ED_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:paddingLeft="25dp"
+
+                android:gravity="left"
+
+                android:inputType="textEmailAddress"
+
+                android:hint="store@gmail.com"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LL4_logup"
+
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+
+            android:layout_marginTop="10dp"
+
+            android:layout_below="@+id/LL3_logup">
+
+            <TextView
+                android:id="@+id/TV_phone_number"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+
+                android:gravity="center"
+
+                android:text="شماره همراه"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="italic"/>
+
+            <EditText
+                android:id="@+id/ED_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:paddingLeft="25dp"
+
+                android:gravity="left"
+
+                android:inputType="phone"
+
+                android:hint="0912xxxxxxx"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LL5_logup"
+
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+
+            android:layout_marginTop="10dp"
+
+            android:layout_below="@+id/LL4_logup">
+
+            <TextView
+                android:id="@+id/TV_date_of_birth"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+
+                android:gravity="center"
+
+                android:text="تاریخ تولد"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="italic"/>
+
+            <EditText
+                android:id="@+id/ED_date_of_birth"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:paddingLeft="25dp"
+
+                android:gravity="left"
+
+                android:inputType="date"
+
+                android:hint="17/05/1992"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/BTN_logup"
+
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+
+            android:layout_marginTop="25dp"
+
+            android:layout_below="@+id/LL5_logup"
+            android:layout_centerHorizontal="true"
+            android:background="@color/icons"
+
+            android:text="ثبت نام"
+            android:textSize="18dp"
+            android:textColor="@color/background"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

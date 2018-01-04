@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.setare.setare_96.store">
+
+    <!-- if you want to load images from the internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Permission to write to external storage -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".splashscreen.Splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Basic_Activity.Main_Activity.HomeActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.HOMEACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Basic_Activity.Users.AccountActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.ACCOUNTACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Basic_Activity.BagActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.BAGACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Basic_Activity.LIST_ListActivity"
+            android:label="دسته بندی محصولات">
+            <intent-filter>
+                <action android:name="android.intent.action.LIST_LISTACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Basic_Activity.SettingsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SETTINGSACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Albums.AlbumsAdapterVertical">
+            <intent-filter>
+                <action android:name="android.intent.action.ALBUMSADAPTERVERTICAL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Commodity.Ditail_Table">
+            <intent-filter>
+                <action android:name="android.intent.action.DITAIL_TABLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Commodity.Object_View">
+            <intent-filter>
+                <action android:name="android.intent.action.OBJECT_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".splashscreen.Erorr_Conction">
+            <intent-filter>
+                <action android:name="android.intent.action.ERORR_CONCTION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Basic_Activity.Users.LogupActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.LOGUPACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Basic_Activity.Users.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.LOGINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Buy_BOX.Buy_BOX_album">
+            <intent-filter>
+                <action android:name="android.intent.action.BUY_BOX_ALBUM" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Buy_BOX.Address.AddressActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.ADDRESSACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Buy_BOX.Address.Add_New_Address">
+            <intent-filter>
+                <action android:name="android.intent.action.ADD_NEW_ADDRESS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Buy_BOX.Send_OrderActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_ORDERACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Buy_BOX.Final_OrderActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.FINAL_ORDERACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Buy_BOX.Pay_Order_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.PAY_ORDER_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="return" android:host="zarinpalpayment"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Basic_Activity.AboutUs">
+            <intent-filter>
+                <action android:name="android.intent.action.ABOUTUS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Albums.AlbumsAdapterSearch">
+            <intent-filter>
+                <action android:name="android.intent.action.ALBUMSADAPTERSEARCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbatlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_album"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:layoutDirection="rtl">
+
+            <TextView
+                android:id="@+id/TV_SUB_album"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+
+                android:gravity="right|center"
+                android:layout_gravity="center"
+
+                android:textColor="@color/Text"
+                android:textSize="18sp"
+                android:text="افزودن آدرس جدید"/>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/appbatlayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="60dp">
+
+            <EditText
+                android:id="@+id/ED_receiver_name"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="right|center"
+
+                android:layout_margin="5dp"
+                android:paddingRight="10dp"
+
+                android:inputType="text"
+                android:hint="نام و نام خانوادگی گیرنده" />
+
+            <EditText
+                android:id="@+id/ED_receiver_phone_number"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/ED_receiver_name"
+
+                android:gravity="right|center"
+
+                android:layout_margin="5dp"
+                android:paddingRight="10dp"
+
+                android:inputType="phone"
+                android:hint="شماره تلفن همراه گیرنده"/>
+
+            <LinearLayout
+                android:id="@+id/LL1_add_new_address"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/ED_receiver_phone_number">
+
+                <EditText
+                    android:id="@+id/ED_receiver_code_number"
+
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="right|center"
+
+                    android:layout_margin="5dp"
+                    android:paddingRight="10dp"
+
+                    android:inputType="phone"
+
+                    android:hint="کد"/>
+
+                <EditText
+                    android:id="@+id/ED_receiver_home_number"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="right|center"
+
+                    android:layout_margin="5dp"
+                    android:paddingRight="10dp"
+
+                    android:inputType="phone"
+
+                    android:hint="شماره تلفن ثابت گیرنده"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LL2_add_new_address"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:weightSum="2"
+
+                android:layout_below="@+id/LL1_add_new_address">
+
+                <EditText
+                    android:id="@+id/ED_receiver_city"
+
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+
+                    android:gravity="right|center"
+
+                    android:layout_margin="5dp"
+                    android:paddingRight="10dp"
+
+                    android:inputType="text"
+
+                    android:hint="شهر"/>
+
+                <EditText
+                    android:id="@+id/ED_receiver_state"
+
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+
+                    android:gravity="right|center"
+
+                    android:layout_margin="5dp"
+                    android:paddingRight="10dp"
+
+                    android:inputType="text"
+
+                    android:hint="استان"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/ED_receiver_post_number"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/LL2_add_new_address"
+
+                android:gravity="right|center"
+
+                android:layout_margin="5dp"
+                android:paddingRight="10dp"
+
+                android:inputType="numberSigned"
+                android:hint="کد پستی"/>
+
+            <EditText
+                android:id="@+id/ED_receiver_post_address"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/ED_receiver_post_number"
+
+                android:gravity="right|center"
+
+                android:layout_margin="5dp"
+                android:paddingRight="10dp"
+
+                android:inputType="text"
+                android:hint="نشانی پستی"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/BTN_final_buy_box"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="15dp"
+
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+
+        android:background="@color/green"
+
+        android:text="ثبت اطلاعات >"
+        android:textSize="18dp"
+        android:textColor="@color/background"/>
+
+</RelativeLayout>

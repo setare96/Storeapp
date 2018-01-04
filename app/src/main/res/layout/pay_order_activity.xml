@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbatlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_album"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:layoutDirection="rtl">
+
+            <TextView
+                android:id="@+id/TV_SUB_album"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+
+                android:gravity="right|center"
+                android:layout_gravity="center"
+
+                android:textColor="@color/Text"
+                android:textSize="18sp"
+                android:text="پرداخت"/>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/appbatlayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:paddingBottom="60dp">
+
+            <LinearLayout
+                android:id="@+id/LL_total_address"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="10dp">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/card_margin"
+                    android:elevation="3dp"
+                    card_view:cardCornerRadius="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:layout_margin="8dp">
+
+                        <LinearLayout
+                            android:id="@+id/LL4_address"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="3"
+
+                            android:minHeight="40dp"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/TV_total_price_pay"
+
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:gravity="right"
+
+                                android:paddingRight="10dp"
+
+                                android:text="********"
+                                android:textSize="25dp"/>
+
+                            <TextView
+                                android:layout_weight="2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:gravity="right"
+
+                                android:layout_margin="5dp"
+                                android:paddingRight="10dp"
+
+                                android:text="قیمت کل :"
+                                android:textSize="20dp"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LL_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:layout_below="@+id/LL_total_address">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view_post"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/card_margin"
+                    android:elevation="3dp"
+                    card_view:cardCornerRadius="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/TV_post"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center_vertical"
+
+                            android:paddingRight="10dp"
+
+                            android:text="شیوه پرداخت :"
+                            android:textSize="25dp"
+                            android:textStyle="bold"/>
+
+                        <View
+                            android:id="@+id/v_post"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="2dp"
+
+                            android:layout_below="@+id/TV_post"
+
+                            android:background="@android:color/darker_gray"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:weightSum="3"
+
+                            android:gravity="center"
+
+                            android:layout_below="@+id/v_post">
+
+                            <RadioGroup
+                                android:id="@+id/radioGroup"
+
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:paddingBottom="15dp"
+                                android:paddingTop="15dp">
+
+                                    <RadioButton
+                                        android:id="@+id/Radio_BTN_ZarinPal"
+
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+
+                                        android:gravity="left|center"
+
+                                        android:checked="true"
+                                        android:buttonTint="@color/green"
+
+                                        android:text="زرین ‌پال "/>
+
+                                    <RadioButton
+                                        android:id="@+id/Radio_BTN_Pay_in_place"
+
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+
+                                        android:gravity="left|center"
+
+                                        android:checked="false"
+                                        android:buttonTint="@color/green"
+
+                                        android:text="پرداخت در محل " />
+
+                            </RadioGroup>
+
+
+                            <LinearLayout
+                                android:layout_weight="2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                android:orientation="vertical"
+                                android:paddingBottom="15dp"
+                                android:paddingTop="15dp"
+
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+
+                                    android:gravity="center"
+
+                                    android:background="@drawable/zarinpal_logo"/>
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+
+                                    android:gravity="center"
+
+                                    android:background="@drawable/ic_place_black_24dp"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/BTN_send_pay"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="15dp"
+
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+
+        android:background="@color/green"
+
+        android:text="پرداخت >"
+        android:textSize="18dp"
+        android:textColor="@color/background"/>
+
+</RelativeLayout>

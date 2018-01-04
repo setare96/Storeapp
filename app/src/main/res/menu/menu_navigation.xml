@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/list_things"
+            android:title="لیست دسته‌بندی محصولات"
+            android:icon="@drawable/ic_list_black_18dp"/>
+        <item
+            android:id="@+id/account"
+            android:title="پنل کاربری"
+            android:icon="@drawable/ic_perm_contact_calendar_black_24dp"/>
+        <item
+            android:id="@+id/settings"
+            android:title="تنظیمات"
+            android:icon="@drawable/ic_settings_black_18dp"/>
+        <item
+            android:id="@+id/buy_box"
+            android:title="سبد خرید"
+            android:icon="@drawable/ic_local_grocery_store_black_18dp"
+            app:actionLayout="@layout/buy_box_counter"/>
+        <item
+            android:id="@+id/about_us"
+            android:title="درباره ما"
+            android:icon="@drawable/ic_person_black_18dp"/>
+        <item
+            android:id="@+id/favorite"
+            android:title="لیست علاقه‌مندی ها"
+            android:icon="@drawable/ic_favorite_black_24dp"/>
+    </group>
+</menu>

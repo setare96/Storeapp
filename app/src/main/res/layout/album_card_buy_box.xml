@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/card_margin"
+        android:elevation="3dp"
+        card_view:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <RelativeLayout
+                android:id="@+id/RL1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+
+                    android:layout_margin="10dp"
+
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/thumbnail"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:scaleType="fitXY" />
+
+
+                <RelativeLayout
+                    android:layout_toLeftOf="@+id/thumbnail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:gravity="right"
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="40dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="@dimen/album_title_padding"
+                        android:text="اسم"
+                        android:textColor="#17202A"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/title"
+                        android:layout_marginTop="10dp"
+                        android:gravity="right"
+                        android:id="@+id/TV_warranty_topic_object_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minHeight="40dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="@dimen/album_title_padding"
+                        android:text="گارانتی :"
+                        android:textColor="#17202A"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_toLeftOf="@+id/TV_warranty_topic_object_view"
+                        android:layout_below="@+id/title"
+                        android:layout_marginTop="10dp"
+                        android:gravity="right"
+                        android:id="@+id/TV_warranty_object_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="40dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="@dimen/album_title_padding"
+                        android:textColor="#85929E"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/TV_warranty_object_view"
+                        android:layout_marginTop="10dp"
+                        android:gravity="right"
+                        android:id="@+id/TV_seller_topic_object_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minHeight="40dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="@dimen/album_title_padding"
+                        android:text="فروشنده :"
+                        android:textColor="#17202A"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_toLeftOf="@+id/TV_seller_topic_object_view"
+                        android:layout_below="@+id/TV_warranty_object_view"
+                        android:layout_marginTop="10dp"
+                        android:gravity="right"
+                        android:id="@+id/TV_seller_object_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="40dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="@dimen/album_title_padding"
+                        android:textColor="#85929E"
+                        android:textSize="12dp" />
+
+                    <LinearLayout
+                        android:id="@+id/RR1"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:weightSum="3"
+
+                        android:layout_below="@+id/TV_seller_topic_object_view">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+
+                            android:background="@color/background"
+                            android:gravity="left|center">
+
+                            <Spinner
+                                android:id="@+id/spinner"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+
+                                android:prompt="@string/spinner_title"
+                                />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+
+                            android:gravity="right|center"
+
+                            android:layout_marginLeft="5dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+
+                            android:text="تعداد :"
+                            android:textColor="#17202A"
+                            android:textSize="15dp" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:layout_marginTop="10dp"
+
+                android:background="@android:color/darker_gray"
+
+                android:layout_below="@id/RL1"/>
+
+            <RelativeLayout
+                android:id="@+id/RL2"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:layout_below="@id/v1"
+
+                android:background="#D5DBDB">
+
+                <TextView
+
+                    android:layout_alignParentRight="true"
+                    android:gravity="left|center_vertical"
+                    android:id="@+id/count_topic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:textSize="20dp"
+                    android:text="قیمت  :"
+                    android:textColor="@color/colorAccent"/>
+
+                <TextView
+                    android:layout_toLeftOf="@+id/count_topic"
+                    android:gravity="left|center"
+                    android:id="@+id/count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="50dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="@dimen/album_title_padding"
+                    android:textColor="#17202A"
+                    android:textSize="12dp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
